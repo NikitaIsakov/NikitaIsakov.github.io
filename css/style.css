@@ -271,6 +271,9 @@ footer{
 	margin-left:-20px;
 
 }
+main{
+	padding: 22px 50px 50px;
+}
 }
 @media(max-width:768px){
 	.left-block{
@@ -287,6 +290,20 @@ footer{
 	margin-top:15px;	
 	margin-left:5px;
 }
+main{
+	padding: 22px 50px 50px;
+}
+}
+@media(max-width:576px){
+	.padding-header{
+	padding-top:59px;
+	padding-left:35px;
+	padding-bottom:50px;
+}
+main{
+	padding: 10px;
+}
+
 }
 
 
