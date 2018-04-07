@@ -1,0 +1,294 @@
+
+body{
+	font-family:'Roboto';
+	margin:0;
+}
+
+/*Начало шапки*/
+a, button{
+	cursor: pointer;
+}
+img{
+	max-width:100%;
+}
+header{
+	background-color: #3a7dfd;
+	color:white;
+}
+.padding-header{
+	padding-top:59px;
+	padding-left:116px;
+	padding-bottom:50px;
+}
+.header-title {
+	font-size: 18px;
+	font-weight: 700;
+	padding-top:102px;
+	padding-left:1px;
+	margin-bottom:21px;
+}
+.biograf h1{
+	margin-top:0;
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom:20px;
+}
+.header-content{
+	margin-top:0;
+	margin-left:1px;
+	margin-bottom:33px;
+	font-size:18px;
+	font-weight: 300;
+	font-family: Roboto;
+}
+
+.biograf .btn{	
+	display:block;
+	width:200px;
+	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
+	border-radius:60px;
+	background-color: #ffffff;
+	margin-top:0;
+	padding:17px 57px 19px 55px;
+	border-color:#fff;
+	font-size: 18px;
+	font-weight: 700;
+	color: #072b6f;
+	max-width: 200px;
+	margin-left:0;
+	text-decoration:none;
+	transition: 1s;
+}
+.btn:hover{
+	
+	transform:scale(1.1);
+	box-shadow: 5px 9px 17px 3px rgba(18, 61, 145, 0.93);
+}
+
+.btn:active{
+	animation-name: zoomOut;
+	animation-duration:1s;
+}
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+small{
+	display:block;
+	margin-top:9px;
+	margin-left:54px;
+}
+
+/* Конец шапки*/
+
+/*Начало среднего блока*/
+
+main{
+	background-color: #dddddd;
+	padding: 44px 160px 70px;
+}
+
+.main-wrap{
+	background-color:white;	
+	padding-bottom:31px;
+}
+
+.main-header{
+	text-align:center;
+	padding-top:29px;
+}
+.main-header h2{
+	margin-top:0;
+	margin-bottom:0;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #072b6f;
+}
+.main-header p{
+	font-size: 14px;
+	font-weight: 400;
+	color: #7bb9ff;
+	margin-top:10px;
+	margin-bottom:0;	
+}
+
+.main-blocks{
+	margin-top:3%;
+	margin-left:5%;
+	margin-right:5%;
+}
+.main-blocks h3{
+	color: #072b6f;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.main-blocks p{
+	max-width:95%;
+	color: #8f8f8f;
+	font-size: 14px;
+	font-weight: 400;
+}
+.main-blocks a{
+	color: #072b6f;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: underline;
+}
+/*Конец среднего блока*/
+
+/*Начало футера*/
+footer{
+	padding-top:60px;
+	padding-bottom:110px;
+	background-color: #3a7dfd;
+}
+.author{
+	margin-top:14px;
+	padding-left:90px;
+}
+.author h4{
+	color: #fefefe;
+	font-size: 24px;
+	font-weight: 700;
+	margin-top:0;
+	margin-bottom:7px;
+	
+}
+.author p{
+	color: #deedfe;
+	font-size: 18px;
+	font-weight: 300;
+	margin-top:0;
+}
+.social{
+	text-align:center;
+}
+.social p{
+	color: #deedfe;
+	font-size: 18px;
+	font-weight: 300;
+	margin-top:0;
+	margin-bottom:21px;	
+}
+.social a{
+	margin-top:0;
+	margin-right:27px;
+}
+.social a:last-child{
+	margin-right:0;
+}
+
+.buttons{
+	text-align:center;
+	
+}
+.buttons p{
+	margin-top:0;
+	color: #deedfe;
+	font-size: 18px;
+	font-weight: 300;
+	margin-bottom:26px;
+	margin-left:-40px;
+}
+
+.btn-2{
+	color: #deedfe;
+	font-size: 18px;
+	font-weight: 300;
+	text-decoration:none;
+	border-radius: 40px;
+	border: 1px solid #ffffff;
+	padding:15px 43px;
+	margin-top:0;
+	transition: 0.4s;
+}
+
+.btn-2:hover{
+	color:#3a7dfd;
+	background-color:#deedfe;
+
+}
+/*Кoнец футера*/
+
+@media(max-width:1200px){
+	.header-title{
+	padding-top:60px;
+}
+}
+
+@media(max-width:992px){
+	.logoheader{
+	display:none;
+	}
+	.header-title{
+	padding-top:0;
+}
+.main-blocks{
+	margin-top:3%;
+	margin-left:2%;
+	margin-right:2%;
+}
+.author{
+	font-size:16px;
+	padding-left:30px;
+}
+.author p{
+	font-size:14px;
+}
+.author h4{
+	margin-left:0;
+	font-size:16px;
+}
+.social a img{
+	width:30px;
+	height:30px;
+}
+.social p{
+	font-size:16px;
+}
+.social a{
+	margin-right:10px;
+}
+.btn-2{
+	font-size: 14px;
+	padding:8px 35px;
+}
+.buttons p{
+	font-size:16px;
+	margin-left:-20px;
+
+}
+}
+@media(max-width:768px){
+	.left-block{
+	margin-bottom:30px;
+	}
+	.author h4, .author p{
+	text-align:center;
+}
+	.social p{
+	font-size: 16px;
+	margin-left:5px;
+	}
+	.buttons p{
+	margin-top:15px;	
+	margin-left:5px;
+}
+}
+
+
+
+
